@@ -31,6 +31,6 @@ app.use(require("./routes/api"))
 
 //Initiate server
 app.listen(PORT, () => {
-    console.log(`Currently the port 3000 ${PORT} has successfully been running`)
-})
+    console.log(`Currently the port 3000 ${PORT} has successfully been running`);
+});
 
