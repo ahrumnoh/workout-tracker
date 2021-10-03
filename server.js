@@ -1,17 +1,36 @@
-const mongoose = require('mongoose')
-const morgan = require('morgan')
-const express = require('express')
-const htmlroute =  require('./routes/html') 
-const port = 3000
-const app = express()
+//Global Dependencies
+const mongoose = require('mongoose');
+const morgan = require('morgan');
+const express = require('express');
 
-app.use(express.urlencoded({extended:true}))
-app.use(express.json())
-app.use(morgan("dev"))
-app.use(htmlroute)
-app.use(express.static)
 
-mongoose.connect('mongodb://localhost/workout', {useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true})
-app.listen(port, () => {
-    console.log("Running the port local 3000")
- })
+//Establish Port
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+//Middleware
+
+app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: true}));
+app.use(express.json());
+
+//Set static files to public folder
+app.use(express.static("public"));
+
+
+//Mongoose connect (Workout database)
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useFindAndModify: false});
+
+//Routes
+
+app.use(require("./routes/html"));
+app.use(require("./routes/api"))
+
+
+
+//Initiate server
+app.listen(PORT, () => {
+    console.log(`Currently the port 3000 ${PORT} has successfully been running`)
+})
+
