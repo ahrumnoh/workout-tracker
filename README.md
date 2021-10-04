@@ -2,7 +2,7 @@
 <p><img src="https://img.shields.io/badge/JavaScript-56.6%25-blue?style=flat&logo=javascript"> <img src="https://img.shields.io/badge/CSS3-24.1%25-blue?style=flat&logo=css3"> <img src="https://img.shields.io/badge/HTML5-19.3%25-blue?style=flat&logo=html5"> </p>
 
 
-![Workout Tracker](C:\Users\sydne\USYDfirsthw\workout-tracker\assets\image\workout tracker.png)
+![Workout Tracker](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/workout%20tracker.png?raw=true)
   
  
 
