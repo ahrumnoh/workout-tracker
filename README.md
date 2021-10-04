@@ -16,9 +16,8 @@
   * [Installation](#installation)
   * [Technologies](#technologies)
   * [Scrrenshot](#Screenshot)
-  * [Roadmap](#roadmap)
-  * [Contributing](#contributing)
   * [License](#license)
+
   
   ## Installation
   * ```npm install``` to install all modules listed within the ```package.json``` file<br>
@@ -27,7 +26,7 @@
   * ```morgan```<br>
   * ```path```<br>
     
-  ## Technologies
+  ## 💻Technologies
   * <a href="www.javascript.com" target="_blank">JavaScript</a>:
   * <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a>
   * <a href="http://www.css3.info/" target="_blank">CSS3</a>
@@ -48,7 +47,7 @@
   ![Dashboard](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/2021-10-05%20(2).png?raw=true)
   
 
-  ## License
+  ## 🚩License
 
 *   MIT License
 
