@@ -1,4 +1,4 @@
-# Interactive Workout Mapper
+# Workout TRacker 🏋️‍♀️
 <p><img src="https://img.shields.io/badge/JavaScript-56.6%25-blue?style=flat&logo=javascript"> <img src="https://img.shields.io/badge/CSS3-24.1%25-blue?style=flat&logo=css3"> <img src="https://img.shields.io/badge/HTML5-19.3%25-blue?style=flat&logo=html5"> </p>
 
 
@@ -15,14 +15,12 @@
   * [License](#license)
   
   ## Installation
-  If cloning to personal machine, open repository in terminal confim you're within the root folder. From there, run ```npm install``` to install all modules listed within the ```package.json``` file.<br>
-  <br>
-  Individual modules to be installed:<br>
+  * ```npm install``` to install all modules listed within the ```package.json``` file<br>
   * ```express```<br>
   * ```mongoose```<br>
   * ```morgan```<br>
   * ```path```<br>
-  
+    
   ## Technologies
   * <a href="www.javascript.com" target="_blank">JavaScript</a>:
   * <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5</a>
