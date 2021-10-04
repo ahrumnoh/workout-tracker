@@ -15,7 +15,7 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Technologies](#technologies)
-  * [Scrrenshot](#Screenshot)
+  * [Screenshot](#Screenshot)
   * [License](#license)
 
   
