@@ -1,44 +1,36 @@
-//Global Dependencies
-const mongoose = require("mongoose");
-const logger = require("morgan");
+// Global Dependencies
 const express = require("express");
+const logger = require("morgan");
+const mongoose = require("mongoose");
 
-
-//Establish Port
+// Establish PORT Connection
 const PORT = process.env.PORT || 3000;
 const app = express();
 
-//Middleware
-
+// Middleware
 app.use(logger("dev"));
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//Set static files to public folder
+// Set static files to public folder
 app.use(express.static("public"));
 
 
-//Mongoose connect (Workout database)
-
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/workout",
-    {
-         useNewUrlParser: true, 
-         useFindAndModify: false,
-         useUnifiedTopology: true,
-         useCreateIndex: true
-    }
-  );
+  process.env.MONGODB_URI || "mongodb://localhost/workout", 
+  { 
+    useNewUrlParser: true, 
+    useFindAndModify: false,
+    useCreateIndex: true,
+    useFindAndModify:false 
+  }
+); // Following initial setup in seed.js
 
-//Routes
-
+// Routes
 app.use(require("./routes/html"));
 app.use(require("./routes/api"))
 
-
-
-//Initiate server
+// Initiate server
 app.listen(PORT, () => {
-    console.log(`Currently the port 3000 ${PORT} has successfully been running`);
+  console.log(`Port 3000 is running now🚀 ${PORT}!`);
 });
-

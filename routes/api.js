@@ -3,6 +3,35 @@ const Workout = require("../models/workout.js");
 
 
 
+
+
+//READ- to get previous workout by api.js
+
+router.get("/api/workouts", (req, res) => {
+  Workout.find()
+  .then(dbWorkout => {
+  res.json(dbWorkout);
+  })
+  .catch(err => {
+      res.json(err);
+  });
+});
+
+//api/workouts/range
+//READ - Gets the range of workouts
+
+router.get("/api/workouts/range", (req, res) => {
+  Workout.find({})
+  .then(dbWorkout => {
+      console.log(dbWorkout)
+      res.json(dbWorkout);
+  })
+  .catch(err => {
+      res.json(err);
+  });
+});
+
+
 //api-workouts.js 
 //CREAT- new workout in the database
 
@@ -18,17 +47,6 @@ router.post("/api/workouts", (req, res) => {
 
 
 
-//READ- to get previous workout by api.js
-
-router.get("/api/workouts", (req, res) => {
-    Workout.find()
-    .then(dbWorkout => {
-    res.json(dbWorkout);
-    })
-    .catch(err => {
-        res.json(err);
-    });
-});
 
 
 //DELETE
@@ -42,23 +60,6 @@ router.delete("/api/workouts", ( { body }, res) => {
         res.json(err);
     });
 });
-
-
-//api/workouts/range
-//READ - Gets the range of workouts
-
-router.get("/api/workouts/range", (req, res) => {
-    Workout.find({})
-    .then(dbWorkout => {
-        console.log(dbWorkout)
-        res.json(dbWorkout);
-    })
-    .catch(err => {
-        res.json(err);
-    });
-});
-
-
 
 
 //api/workouts/:id
