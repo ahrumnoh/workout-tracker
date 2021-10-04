@@ -9,7 +9,7 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Technologies](#technologies)
-  * [Authors](#authors)
+  * [Scrrenshot](#Screenshot)
   * [Roadmap](#roadmap)
   * [Contributing](#contributing)
   * [License](#license)
@@ -33,8 +33,11 @@
   * <a href="https://mongoosejs.com/" target="_blank">Mongoose</a>
 
   
-  ## Authors
-  <a href="www.https://github.com/ahrumnoh" target="_blank">Ahrum Noh</a>
+  ## Screenshot
+  ![Mainpage](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/2021-10-05%20(4).png?raw=true)
+  ![Form Sector](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/2021-10-05%20(5).png?raw=true)
+  ![Form Sector2](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/2021-10-05%20(3).png?raw=true)
+  ![Dashboard](https://github.com/ahrumnoh/workout-tracker/blob/main/assets/image/2021-10-05%20(2).png?raw=true)
   
 
   ## License
