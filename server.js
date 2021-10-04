@@ -34,3 +34,5 @@ app.use(require("./routes/api"))
 app.listen(PORT, () => {
   console.log(`Port 3000 is running now🚀 ${PORT}!`);
 });
+
+
