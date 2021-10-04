@@ -1,7 +1,7 @@
 //Global Dependencies
-const mongoose = require('mongoose');
-const logger = require('morgan');
-const express = require('express');
+const mongoose = require("mongoose");
+const logger = require("morgan");
+const express = require("express");
 
 
 //Establish Port
@@ -20,7 +20,15 @@ app.use(express.static("public"));
 
 //Mongoose connect (Workout database)
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useFindAndModify: false});
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/workout",
+    {
+         useNewUrlParser: true, 
+         useFindAndModify: false,
+         useUnifiedTopology: true,
+         useCreateIndex: true
+    }
+  );
 
 //Routes
 

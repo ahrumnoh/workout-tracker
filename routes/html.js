@@ -15,4 +15,4 @@ router.get("/exercise", (req, res) => {
 });
 
 
-module.experts = router
+module.experts = router;
