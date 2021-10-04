@@ -1,6 +1,6 @@
 //Global Dependencies
 const mongoose = require('mongoose');
-const morgan = require('morgan');
+const logger = require('morgan');
 const express = require('express');
 
 
@@ -10,7 +10,7 @@ const app = express();
 
 //Middleware
 
-app.use(morgan("dev"));
+app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
