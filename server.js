@@ -27,8 +27,9 @@ mongoose.connect(
 ); // Following initial setup in seed.js
 
 // Routes
+app.use(require("./routes/api"));
 app.use(require("./routes/html"));
-app.use(require("./routes/api"))
+
 
 // Initiate server
 app.listen(PORT, () => {
